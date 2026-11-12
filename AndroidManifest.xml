@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:compileSdkVersion="35" android:compileSdkVersionCodename="15" android:installLocation="internalOnly" package="com.sds.emm.kiosk.app2025071720122" platformBuildVersionCode="35" platformBuildVersionName="15">
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:maxSdkVersion="32" android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+    <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
+    <uses-permission android:name="android.permission.EXPAND_STATUS_BAR"/>
+    <uses-permission android:name="android.permission.READ_CALL_LOG"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-feature android:name="android.hardware.telephony" android:required="false"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.QUERY_ALL_PACKAGES"/>
+    <supports-screens android:anyDensity="true" android:largeScreens="false" android:normalScreens="true" android:resizeable="true" android:smallScreens="false" android:xlargeScreens="false"/>
+    <application android:extractNativeLibs="false" android:hardwareAccelerated="@bool/config_hardwareAccelerated" android:icon="@drawable/appicon_96x96" android:label="@string/application_name" android:largeHeap="@bool/config_largeHeap" android:name="com.prompt.kiosk.slauncher.LauncherApplication" android:requestLegacyExternalStorage="true" android:theme="@style/AtomTheme" android:usesCleartextTraffic="true">
+        <meta-data android:name="android.max_aspect" android:value="2.1"/>
+        <activity android:clearTaskOnLaunch="true" android:exported="true" android:launchMode="singleTask" android:name="com.prompt.kiosk.slauncher.Launcher" android:screenOrientation="sensor" android:stateNotNeeded="true" android:theme="@style/AtomTheme.Wallpaper.NoTitleBar" android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="net.sskin.theme.protocol"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.launcher.intent.action.SHOW_WIDGETMANAGER"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.slauncher.intent.action.FIRE_DOWNLOAD_PROXY_SHORTCUT"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.launcher.THEME.WIDGET_SEARCHBAR"/>
+            </intent-filter>
+        </activity>
+        <activity android:clearTaskOnLaunch="true" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.prompt.kiosk.slauncher.LauncherAlias" android:screenOrientation="sensor" android:stateNotNeeded="true" android:theme="@style/NoDisplay">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleTop" android:name="com.prompt.kiosk.slauncher.KioskWebActivity" android:theme="@style/AtomTheme.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.launcher.intent.action.SHOW_WEB"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:scheme="http"/>
+                <data android:scheme="https"/>
+                <data android:scheme="asset"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:launchMode="singleTop" android:name="com.prompt.kiosk.slauncher.OpenSourceLicenseActivity" android:noHistory="true" android:theme="@style/AtomTheme.Wallpaper.NoTitleBar"/>
+        <provider android:authorities="com.sds.emm.kiosk.app2025071720122.fileprovider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/filepaths"/>
+        </provider>
+        <activity android:exported="true" android:label="@string/widget_name_memo" android:launchMode="singleTop" android:name="com.prompt.kiosk.slauncher.MemoActivity" android:theme="@style/AtomTheme.NoTitleBar" android:windowSoftInputMode="stateVisible|adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="@string/view_pager_activity" android:name="com.prompt.kiosk.slauncher.screensaver.ViewPagerActivity" android:theme="@style/AtomTheme.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.slauncher.intent.action.SHOW_SCREENSAVER_IMAGE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:configChanges="keyboardHidden|orientation" android:exported="true" android:label="@string/video_view_activity" android:name="com.prompt.kiosk.slauncher.screensaver.VideoViewActivity" android:theme="@style/AtomTheme.Wallpaper.NoTitleBar">
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.slauncher.intent.action.SHOW_SCREENSAVER_VIDEO"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <provider android:authorities="com.sds.emm.kiosk.app2025071720122" android:name="com.prompt.kiosk.slauncher.LauncherProvider"/>
+        <service android:exported="true" android:name="com.prompt.kiosk.slauncher.BadgeNotificationService" android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.notification.NotificationListenerService"/>
+            </intent-filter>
+        </service>
+        <activity android:allowTaskReparenting="true" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize" android:excludeFromRecents="true" android:exported="true" android:launchMode="singleInstance" android:name="com.prompt.kiosk.slauncher.FloatingAboutKioskActivity" android:theme="@style/KioskDialog">
+            <intent-filter>
+                <action android:name="com.prompt.kiosk.launcher.intent.action.ABOUT_KIOSK"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <meta-data android:name="android.support.VERSION" android:value="26.1.0"/>
+        <meta-data android:name="android.arch.lifecycle.VERSION" android:value="27.0.0-SNAPSHOT"/>
+    </application>
+</manifest>
