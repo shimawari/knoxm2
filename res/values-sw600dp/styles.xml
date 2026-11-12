@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AboutDialogDoneButton">
+        <item name="android:textSize">21.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:background">@drawable/km_dialog_btn_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">65.0dp</item>
+    </style>
+    <style name="AboutDialogInfoContent">
+        <item name="android:textSize">17.0dp</item>
+        <item name="android:textColor">#ff848487</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AboutDialogMenuButton" parent="@style/KioskDialogButtonStyle">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/about_btn_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ripple_round</item>
+        <item name="android:padding">12.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="AboutDialogMenuText">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AboutDialogRowStyle">
+        <item name="android:paddingTop">10.0dp</item>
+        <item name="android:paddingBottom">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="AboutDialogTitle">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20.0dp</item>
+        <item name="android:layout_marginBottom">20.0dp</item>
+        <item name="android:layout_marginStart">35.0dp</item>
+        <item name="android:layout_marginEnd">35.0dp</item>
+    </style>
+    <style name="KioskDialogButtonPanel">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">15.0dp</item>
+    </style>
+    <style name="KioskDialogButtonStyle">
+        <item name="android:textSize">22.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeStepGranularity">1.0dp</item>
+        <item name="android:autoSizeMinTextSize">15.0dp</item>
+        <item name="android:autoSizeMaxTextSize">22.0dp</item>
+    </style>
+    <style name="KioskDialogMessage">
+        <item name="android:textSize">18.0dp</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineHeight">28.0dp</item>
+    </style>
+    <style name="KioskDialogTitle">
+        <item name="android:textSize">21.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">18.0dp</item>
+        <item name="android:layout_marginBottom">18.0dp</item>
+        <item name="android:layout_marginStart">4.0dp</item>
+        <item name="android:layout_marginEnd">4.0dp</item>
+    </style>
+</resources>

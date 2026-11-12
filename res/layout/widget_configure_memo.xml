@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/atom_title_bg" android:layout_width="match_parent" android:layout_height="48.0dp">
+        <TextView android:id="@id/main_title" android:paddingLeft="@dimen/theme_setting_title_margin_left" android:paddingRight="@dimen/theme_setting_title_margin_right" android:layout_width="0.0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1.0" style="@style/AtomTextAppearance.Title" />
+        <ImageButton android:id="@id/btn_ok" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_memo_ok" android:scaleType="centerInside" android:minWidth="0.0dp" android:minHeight="0.0dp" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:id="@id/config_textsize" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="32.0dp" android:layout_marginTop="15.0dp" android:layout_marginRight="32.0dp" android:layout_marginBottom="30.0dp">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_memo_small_t" />
+        <SeekBar android:id="@id/seekbar" android:paddingLeft="16.0dp" android:paddingRight="16.0dp" android:layout_width="0.0dp" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/widget_memo_big_t" />
+    </LinearLayout>
+    <FrameLayout android:id="@id/body" android:paddingLeft="@dimen/workspace_left_padding" android:paddingRight="@dimen/workspace_right_padding" android:layout_width="match_parent" android:layout_height="0.0dp" android:layout_weight="1.0">
+        <com.prompt.kiosk.slauncher.Memo android:layout_gravity="center_horizontal" android:id="@id/memo" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </FrameLayout>
+</LinearLayout>

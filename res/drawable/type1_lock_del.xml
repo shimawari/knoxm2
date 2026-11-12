@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:drawable="@drawable/type1_lock_del_dim" />
+    <item android:state_pressed="true" android:drawable="@drawable/type1_lock_del_pre" />
+    <item android:drawable="@drawable/type1_lock_del_nor" />
+</selector>

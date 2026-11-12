@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lock_connections">
+        <item>@id/lockscreen_btn_1</item>
+        <item>@id/lockscreen_btn_2</item>
+        <item>@id/lockscreen_btn_3</item>
+        <item>@id/lockscreen_btn_4</item>
+        <item>@id/lockscreen_btn_5</item>
+        <item>@id/lockscreen_btn_del</item>
+        <item>@id/lockscreen_btn_0</item>
+        <item>@id/lockscreen_btn_9</item>
+        <item>@id/lockscreen_btn_8</item>
+        <item>@id/lockscreen_btn_7</item>
+        <item>@id/lockscreen_btn_6</item>
+        <item>@id/lockscreen_btn_clear</item>
+    </array>
+</resources>

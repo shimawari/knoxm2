@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/workspace_position_marker_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/btn_home_info" android:layout_width="68.0dp" android:layout_height="68.0dp" android:src="@drawable/home_btn_info" android:scaleType="fitXY" />
+    <ImageView android:id="@id/btn_home_lock" android:layout_width="68.0dp" android:layout_height="68.0dp" android:src="@drawable/home_btn_lock" android:scaleType="fitXY" android:layout_alignParentRight="true" />
+    <com.prompt.kiosk.slauncher.PositionMarker android:id="@id/position_marker" android:layout_width="match_parent" android:layout_height="12.0dp" android:layout_toLeftOf="@id/btn_home_lock" android:layout_toRightOf="@id/btn_home_info" android:layout_centerInParent="true" />
+</RelativeLayout>

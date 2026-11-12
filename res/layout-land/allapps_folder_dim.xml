@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/dim_top" android:background="#80000000" android:layout_width="@dimen/qsb_bar_height" android:layout_height="match_parent" />
+    <View android:id="@id/dim_top2" android:background="#80000000" android:layout_width="@dimen/tray_width_land" android:layout_height="match_parent" />
+    <View android:background="#80000000" android:layout_width="0.0dp" android:layout_height="match_parent" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<downloadProxyFavorites
+  xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <downloadProxy launcher:proxyName="atomstore">
+        <icon launcher:className="com.dlto.atom.store.StartActivity" launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="atom123123" launcher:packageName="com.dlto.atom.store" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.dlto.atom.store" />
+    </downloadProxy>
+    <downloadProxy launcher:proxyName="atomlocker">
+        <icon launcher:className="com.dlto.atom.locker.settings.LockerSettingActivity" launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="lock" launcher:packageName="com.dlto.atom.locker" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.dlto.atom.locker" />
+    </downloadProxy>
+    <downloadProxy launcher:proxyName="atomwidget">
+        <icon launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="widget" launcher:packageName="com.dlto.atom.widget" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.dlto.atom.widget" />
+    </downloadProxy>
+    <downloadProxy launcher:proxyName="mydol">
+        <icon launcher:className="com.wacompany.mydol.MainActivity" launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="mydol" launcher:packageName="com.wacompany.mydol" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.wacompany.mydol" />
+    </downloadProxy>
+    <downloadProxy launcher:proxyName="facecon">
+        <icon launcher:className="com.prompt.facecon.view.SplashActivity" launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="fc" launcher:packageName="com.prompt.facecon" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.prompt.facecon" />
+    </downloadProxy>
+    <downloadProxy launcher:proxyName="boxmile">
+        <icon launcher:className="com.unity3d.player.UnityPlayerProxyActivity" launcher:icon="download_proxy_ic_theme_theparis.png" launcher:label="box" launcher:packageName="com.Company.Time" />
+        <link launcher:appStore="0" launcher:url="market://details?id=com.Company.Time" />
+    </downloadProxy>
+</downloadProxyFavorites>

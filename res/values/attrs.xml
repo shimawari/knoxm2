@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="Accessibility" format="boolean" />
+    <attr name="AdminAction" format="integer" />
+    <attr name="AirplaneMode" format="boolean" />
+    <attr name="AppId" format="string" />
+    <attr name="AutoRotate" format="boolean" />
+    <attr name="BackgroundColor" format="color" />
+    <attr name="BlueLight" format="boolean" />
+    <attr name="DeviceBluetooth" format="boolean" />
+    <attr name="DeviceDisplay" format="boolean" />
+    <attr name="DeviceHotspot" format="boolean" />
+    <attr name="DeviceLocation" format="boolean" />
+    <attr name="DeviceMaintenance" format="boolean" />
+    <attr name="DeviceMobiledata" format="boolean" />
+    <attr name="DeviceMobilenetwork" format="boolean" />
+    <attr name="DeviceNfc" format="boolean" />
+    <attr name="DeviceScreenlock" format="boolean" />
+    <attr name="DeviceSound" format="boolean" />
+    <attr name="DeviceWifi" format="boolean" />
+    <attr name="DoNotDisturb" format="boolean" />
+    <attr name="FlashLight" format="boolean" />
+    <attr name="GoogleaccountSetup" format="boolean" />
+    <attr name="GridX" format="integer" />
+    <attr name="GridY" format="integer" />
+    <attr name="HostUrl" format="string" />
+    <attr name="IconScale" format="float" />
+    <attr name="IconTextColor" format="color" />
+    <attr name="IconTextHide" format="boolean" />
+    <attr name="IconTextShadow" format="boolean" />
+    <attr name="IconTextStyle">
+        <flag name="bold" value="0x1" />
+        <flag name="italic" value="0x2" />
+        <flag name="normal" value="0x0" />
+    </attr>
+    <attr name="InitVersion" format="integer" />
+    <attr name="IsOriginal" format="string" />
+    <attr name="IsSingleKiosk" format="string" />
+    <attr name="KeySalt" format="string" />
+    <attr name="Language" format="boolean" />
+    <attr name="LogoAsset" format="string" />
+    <attr name="Password" format="string" />
+    <attr name="PasswordType" format="integer" />
+    <attr name="PointColor" format="color" />
+    <attr name="ScreenOrientation">
+        <enum name="auto" value="1" />
+        <enum name="landscape" value="3" />
+        <enum name="none" value="0" />
+        <enum name="portrait" value="2" />
+    </attr>
+    <attr name="ShowStatusBar" format="boolean" />
+    <attr name="SingleKioskAppId" format="string" />
+    <attr name="SingleKioskAppType" format="string" />
+    <attr name="SingleKioskPackageName" format="string" />
+    <attr name="SmartView" format="boolean" />
+    <attr name="StatusbarColor" format="string" />
+    <attr name="StatusbarTextColor" format="string" />
+    <attr name="TenantId" format="string" />
+    <attr name="TimeZone" format="boolean" />
+    <attr name="WallpaperAsset" format="string" />
+    <attr name="WallpaperMode">
+        <enum name="fixed" value="1" />
+        <enum name="scroll" value="0" />
+    </attr>
+    <attr name="WorkspaceDefaultPage" format="integer" />
+    <attr name="WorkspaceEditLocked" format="boolean" />
+    <attr name="WorkspacePageCount" format="integer" />
+    <attr name="WorkspacePageLooping" format="boolean" />
+    <attr name="WorkspaceTransitionEffect" format="integer" />
+    <attr name="allowFreeGap" format="boolean" />
+    <attr name="animationIdentifier" format="string" />
+    <attr name="appId" format="string" />
+    <attr name="appStore" format="integer" />
+    <attr name="appType" format="string" />
+    <attr name="asset" format="string" />
+    <attr name="battery_style" format="integer" />
+    <attr name="blurColor" format="color" />
+    <attr name="bottom" format="fraction" />
+    <attr name="cellCountX" format="integer" />
+    <attr name="cellCountY" format="integer" />
+    <attr name="cellHeight" format="dimension" />
+    <attr name="cellWidth" format="dimension" />
+    <attr name="className" format="string" />
+    <attr name="clock_style" format="integer" />
+    <attr name="container" format="string" />
+    <attr name="defaultScreen" format="integer" />
+    <attr name="direction">
+        <enum name="horizontal" value="1" />
+        <enum name="vertical" value="0" />
+    </attr>
+    <attr name="distance" format="string" />
+    <attr name="downloadProxyTag" format="string" />
+    <attr name="fixedWidgetCountX" format="integer" />
+    <attr name="fixedWidgetCountY" format="integer" />
+    <attr name="font" format="reference" />
+    <attr name="fontProviderAuthority" format="string" />
+    <attr name="fontProviderCerts" format="reference" />
+    <attr name="fontProviderFetchStrategy">
+        <enum name="async" value="1" />
+        <enum name="blocking" value="0" />
+    </attr>
+    <attr name="fontProviderFetchTimeout" format="integer">
+        <enum name="forever" value="-1" />
+    </attr>
+    <attr name="fontProviderPackage" format="string" />
+    <attr name="fontProviderQuery" format="string" />
+    <attr name="fontStyle">
+        <enum name="italic" value="1" />
+        <enum name="normal" value="0" />
+    </attr>
+    <attr name="fontWeight" format="integer" />
+    <attr name="heightGap" format="dimension" />
+    <attr name="icon" format="string" />
+    <attr name="icon_pointcolor" format="boolean" />
+    <attr name="imageAsset" format="string" />
+    <attr name="initWorkspace" format="boolean" />
+    <attr name="isDefault" format="boolean" />
+    <attr name="itemType" format="integer" />
+    <attr name="label" format="string" />
+    <attr name="left" format="fraction" />
+    <attr name="linkUri" format="string" />
+    <attr name="maxAppCellCountX" format="integer" />
+    <attr name="maxAppCellCountY" format="integer" />
+    <attr name="maxGap" format="dimension" />
+    <attr name="outlineColor" format="color" />
+    <attr name="packageName" format="string" />
+    <attr name="pageCount" format="integer" />
+    <attr name="pageLayoutHeightGap" format="dimension" />
+    <attr name="pageLayoutPaddingBottom" format="dimension" />
+    <attr name="pageLayoutPaddingLeft" format="dimension" />
+    <attr name="pageLayoutPaddingRight" format="dimension" />
+    <attr name="pageLayoutPaddingTop" format="dimension" />
+    <attr name="pageLayoutWidthGap" format="dimension" />
+    <attr name="pageSpacing" format="dimension" />
+    <attr name="pointColor" format="color" />
+    <attr name="proxyName" format="string" />
+    <attr name="queryBlackList" format="string" />
+    <attr name="queryData" format="string" />
+    <attr name="queryIntent" format="string" />
+    <attr name="queryType" format="string" />
+    <attr name="resolverTag" format="string" />
+    <attr name="right" format="fraction" />
+    <attr name="screen" format="string" />
+    <attr name="scrollIndicatorPaddingBottom" format="dimension" />
+    <attr name="scrollIndicatorPaddingLeft" format="dimension" />
+    <attr name="scrollIndicatorPaddingRight" format="dimension" />
+    <attr name="scrollIndicatorPaddingTop" format="dimension" />
+    <attr name="sourceImageViewId" format="integer" />
+    <attr name="spanX" format="string" />
+    <attr name="spanY" format="string" />
+    <attr name="strokeColor" format="color" />
+    <attr name="strokeTextColor" format="color" />
+    <attr name="strokeWidth" format="float" />
+    <attr name="tagName" format="string" />
+    <attr name="textStyle">
+        <flag name="bold" value="0x1" />
+        <flag name="italic" value="0x2" />
+        <flag name="normal" value="0x0" />
+    </attr>
+    <attr name="title" format="string" />
+    <attr name="top" format="fraction" />
+    <attr name="uri" format="string" />
+    <attr name="url" format="string" />
+    <attr name="version" format="string" />
+    <attr name="widgetCellHeightGap" format="dimension" />
+    <attr name="widgetCellWidthGap" format="dimension" />
+    <attr name="widgetCountX" format="integer" />
+    <attr name="widgetCountY" format="integer" />
+    <attr name="widthGap" format="dimension" />
+    <attr name="x" format="string" />
+    <attr name="y" format="string" />
+</resources>

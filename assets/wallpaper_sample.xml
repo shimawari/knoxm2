@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Wallpaper random="true">
+    <Image asset="port_sample.jpg" asset2="land_sample.jpg" />
+    <Image asset="sample_banner_NYC.jpg" asset2="" />
+    <Image asset="Gray64_640x480.jpg" asset2="MagentaDark640x480.jpg" />
+    <Image asset="CyanDark640x480.jpg" asset2="Gray64_640x480.jpg" />
+</Wallpaper>

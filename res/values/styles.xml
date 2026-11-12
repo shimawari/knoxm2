@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AboutDialogDoneButton">
+        <item name="android:textSize">18.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:background">@drawable/km_dialog_btn_background</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">56.0dp</item>
+    </style>
+    <style name="AboutDialogInfoContent">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:textColor">@color/content_font_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AboutDialogMenuButton" parent="@style/KioskDialogButtonStyle">
+        <item name="android:textSize">17.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/about_btn_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/ripple_round</item>
+        <item name="android:padding">12.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="AboutDialogMenuText">
+        <item name="android:textSize">17.0dp</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="AboutDialogRowStyle">
+        <item name="android:paddingTop">4.0dp</item>
+        <item name="android:paddingBottom">4.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_centerVertical">true</item>
+    </style>
+    <style name="AboutDialogTitle">
+        <item name="android:textSize">17.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16.5dp</item>
+        <item name="android:layout_marginBottom">16.5dp</item>
+        <item name="android:layout_marginStart">24.0dp</item>
+        <item name="android:layout_marginEnd">24.0dp</item>
+    </style>
+    <style name="ActionModeView">
+        <item name="android:titleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionMode.Title</item>
+        <item name="android:subtitleTextStyle">@android:style/TextAppearance.Holo.Widget.ActionMode.Subtitle</item>
+    </style>
+    <style name="AddToDialog" parent="@android:style/Theme.Holo.Dialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="Animation" />
+    <style name="Animation.TypingFilter" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@anim/grow_fade_in_center</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out_center</item>
+    </style>
+    <style name="Animation.TypingFilterRestore" parent="@style/Animation">
+        <item name="android:windowEnterAnimation">@null</item>
+        <item name="android:windowExitAnimation">@anim/shrink_fade_out_center</item>
+    </style>
+    <style name="AtomActionBar" parent="@android:style/Widget.ActionBar">
+        <item name="android:background">@drawable/atom_title_bg</item>
+        <item name="android:height">@dimen/window_title_height</item>
+        <item name="android:displayOptions">showTitle</item>
+        <item name="android:titleTextStyle">@style/AtomTextAppearance.Title</item>
+    </style>
+    <style name="AtomActionBar.Tab" parent="@style/AtomActionBar">
+        <item name="android:navigationMode">tabMode</item>
+        <item name="android:displayOptions">showHome|showTitle</item>
+    </style>
+    <style name="AtomCheckBox" parent="@android:style/Widget.Holo.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/btn_preference_check</item>
+        <item name="android:minWidth">22.0dp</item>
+        <item name="android:minHeight">22.0dp</item>
+    </style>
+    <style name="AtomCheckBoxPin" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:background">@null</item>
+        <item name="android:button">@drawable/btn_pin</item>
+        <item name="android:minWidth">32.0dp</item>
+        <item name="android:minHeight">32.0dp</item>
+    </style>
+    <style name="AtomDialog" parent="@style/AtomTheme">
+        <item name="android:windowBackground">@drawable/popup_bg</item>
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowActionBar">false</item>
+        <item name="android:windowActionModeOverlay">false</item>
+    </style>
+    <style name="AtomDialog.Alert" parent="@style/AtomDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowMinWidthMajor">@android:dimen/dialog_min_width_major</item>
+        <item name="android:windowMinWidthMinor">@android:dimen/dialog_min_width_minor</item>
+    </style>
+    <style name="AtomDialogWindowTitle">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:scrollHorizontally">true</item>
+    </style>
+    <style name="AtomEditText" parent="@android:style/Widget.Holo.EditText">
+        <item name="android:textAppearance">?android:textAppearanceMediumInverse</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:textColorHint">#ff696969</item>
+        <item name="android:background">@drawable/popup_input</item>
+        <item name="android:paddingLeft">6.0dp</item>
+        <item name="android:paddingRight">6.0dp</item>
+    </style>
+    <style name="AtomGridView" parent="@android:style/Widget.Holo.GridView">
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+    </style>
+    <style name="AtomListItem" />
+    <style name="AtomListItem.Container" parent="@style/AtomListItem">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:minHeight">48.0dp</item>
+    </style>
+    <style name="AtomListItem.Image" parent="@style/AtomListItem">
+        <item name="android:layout_gravity">center_vertical</item>
+        <item name="android:layout_width">37.0dp</item>
+        <item name="android:layout_height">37.0dp</item>
+        <item name="android:layout_marginLeft">12.5dp</item>
+        <item name="android:scaleType">centerInside</item>
+    </style>
+    <style name="AtomListItem.Text" parent="@style/AtomListItem">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:paddingLeft">11.0dp</item>
+        <item name="android:paddingRight">11.0dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AtomListItem.Text.Category" parent="@style/AtomListItem.Text">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:paddingLeft">15.0dp</item>
+        <item name="android:singleLine">true</item>
+    </style>
+    <style name="AtomListItem.Text.Description" parent="@style/AtomListItem.Text">
+        <item name="android:textAppearance">?android:textAppearanceSmall</item>
+        <item name="android:paddingTop">1.0dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+    </style>
+    <style name="AtomListItem.TextContainer" parent="@style/AtomListItem">
+        <item name="android:paddingTop">7.0dp</item>
+        <item name="android:paddingBottom">7.0dp</item>
+    </style>
+    <style name="AtomListView" parent="@android:style/Widget.Holo.ListView">
+        <item name="android:fadingEdge">vertical</item>
+        <item name="android:listSelector">@drawable/list_selector_background</item>
+        <item name="android:divider">@drawable/list_line</item>
+        <item name="android:overScrollMode">never</item>
+        <item name="android:requiresFadingEdge">vertical</item>
+    </style>
+    <style name="AtomRadioButton" parent="@android:style/Widget.Holo.CompoundButton.RadioButton">
+        <item name="android:button">@drawable/btn_radio</item>
+    </style>
+    <style name="AtomSpinner" parent="@android:style/Widget.Holo.Spinner">
+        <item name="android:textSize">16.0dp</item>
+        <item name="android:textColor">@color/spinner_text_color</item>
+        <item name="android:background">@drawable/theme_button_wallpaper_spinner</item>
+        <item name="android:dropDownSelector">@drawable/list_selector_background</item>
+    </style>
+    <style name="AtomTabBar" parent="@android:style/Widget.ActionBar.TabBar">
+        <item name="android:divider">@null</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerPadding">0.0dp</item>
+    </style>
+    <style name="AtomTabText" parent="@android:style/Widget.ActionBar.TabText">
+        <item name="android:textSize">15.0sp</item>
+        <item name="android:textColor">@color/tab_widgets_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="AtomTabView" parent="@android:style/Widget.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_widget_indicator_selector2</item>
+        <item name="android:paddingLeft">16.0dp</item>
+        <item name="android:paddingRight">16.0dp</item>
+    </style>
+    <style name="AtomTabWidget" parent="@android:style/Widget.Holo.TabWidget">
+        <item name="android:divider">@null</item>
+        <item name="android:tabStripLeft">@null</item>
+        <item name="android:tabStripRight">@null</item>
+        <item name="android:tabStripEnabled">false</item>
+        <item name="android:measureWithLargestChild">true</item>
+        <item name="android:showDividers">none</item>
+        <item name="android:dividerPadding">0.0dp</item>
+    </style>
+    <style name="AtomTextAppearance" />
+    <style name="AtomTextAppearance.PreferenceSummary" parent="@style/AtomTextAppearance">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ffacaeae</item>
+    </style>
+    <style name="AtomTextAppearance.PreferenceTitle" parent="@style/AtomTextAppearance">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="AtomTextAppearance.Title" parent="@style/AtomTextAppearance">
+        <item name="android:textSize">20.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="AtomTheme" parent="@android:style/Theme.Holo">
+        <item name="android:textAppearanceMedium">@style/AtomTextAppearance.PreferenceTitle</item>
+        <item name="android:textAppearanceSmall">@style/AtomTextAppearance.PreferenceSummary</item>
+        <item name="android:windowBackground">@color/window_background_color</item>
+        <item name="android:checkboxStyle">@style/AtomCheckBox</item>
+        <item name="android:editTextStyle">@style/AtomEditText</item>
+        <item name="android:gridViewStyle">@style/AtomGridView</item>
+        <item name="android:listViewStyle">@style/AtomListView</item>
+        <item name="android:radioButtonStyle">@style/AtomRadioButton</item>
+        <item name="android:spinnerStyle">@style/AtomSpinner</item>
+        <item name="android:tabWidgetStyle">@style/AtomTabWidget</item>
+        <item name="android:actionBarStyle">@style/AtomActionBar</item>
+        <item name="android:actionBarTabStyle">@style/AtomTabView</item>
+        <item name="android:actionBarTabBarStyle">@style/AtomTabBar</item>
+        <item name="android:actionBarTabTextStyle">@style/AtomTabText</item>
+        <item name="android:dialogTheme">@style/AtomDialog.Alert</item>
+        <item name="android:alertDialogTheme">@style/AtomDialog.Alert</item>
+    </style>
+    <style name="AtomTheme.NoTitleBar" parent="@style/AtomTheme">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AtomTheme.Settings" parent="@style/AtomTheme">
+        <item name="android:windowBackground">@drawable/atom_window_bg</item>
+    </style>
+    <style name="AtomTheme.Settings.NoTitleBar" parent="@style/AtomTheme.Settings">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="AtomTheme.Settings.Tab" parent="@style/AtomTheme.Settings">
+        <item name="android:actionBarStyle">@style/AtomActionBar.Tab</item>
+    </style>
+    <style name="AtomTheme.Translucent" parent="@style/AtomTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AtomTheme.Translucent.NoTitleBar" parent="@style/AtomTheme.Translucent">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="AtomTheme.Wallpaper" parent="@style/AtomTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowShowWallpaper">true</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="AtomTheme.Wallpaper.NoTitleBar" parent="@style/AtomTheme.Wallpaper">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+    <style name="DialogIcon">
+        <item name="android:textSize">12.0sp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">4.0dp</item>
+        <item name="android:paddingTop">4.0dp</item>
+        <item name="android:paddingRight">4.0dp</item>
+        <item name="android:paddingBottom">4.0dp</item>
+        <item name="android:lines">2</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+        <item name="android:drawablePadding">4.0dp</item>
+    </style>
+    <style name="DropTargetButton">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:paddingLeft">25.0dp</item>
+        <item name="android:paddingRight">25.0dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">center</item>
+    </style>
+    <style name="DropTargetButtonContainer">
+        <item name="android:layout_width">0.0dp</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+    <style name="HelpIconText">
+        <item name="android:textSize">12.5dp</item>
+        <item name="android:textColor">@color/btn_help_icon_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:maxWidth">100.0dp</item>
+    </style>
+    <style name="HelpText">
+        <item name="android:textSize">14.0sp</item>
+        <item name="android:textColor">#ff888888</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="HelpText2">
+        <item name="android:textSize">12.5dp</item>
+        <item name="android:textColor">#ff999999</item>
+    </style>
+    <style name="HelpTitle1">
+        <item name="android:textSize">16.0dp</item>
+        <item name="android:textColor">#ffaaaaaa</item>
+    </style>
+    <style name="HelpTitle2">
+        <item name="android:textSize">34.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:lineSpacingExtra">0.0dp</item>
+    </style>
+    <style name="HelpTitleText">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">5.0dp</item>
+        <item name="android:shadowColor">#ff000000</item>
+        <item name="android:shadowDy">2.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="HiddenDock" />
+    <style name="HiddenDock.Title" parent="@style/HiddenDock">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:textColor">@color/hidden_tab_text_color</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/hidden_tab_bg</item>
+    </style>
+    <style name="HiddenDock.Title.Landscape" parent="@style/HiddenDock.Title" />
+    <style name="HiddenDock.Title.Portrait" parent="@style/HiddenDock.Title">
+        <item name="android:lines">1</item>
+    </style>
+    <style name="KioskDialog" parent="@style/AtomDialog.Alert">
+        <item name="android:windowMinWidthMajor">100.0%</item>
+        <item name="android:windowMinWidthMinor">100.0%</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    <style name="KioskDialogButton" parent="@style/KioskDialogButtonStyle">
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:background">@drawable/ripple_round</item>
+    </style>
+    <style name="KioskDialogButtonPanel">
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">4.0dp</item>
+    </style>
+    <style name="KioskDialogButtonStyle">
+        <item name="android:textSize">18.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:ellipsize">none</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:autoSizeTextType">uniform</item>
+        <item name="android:autoSizeStepGranularity">1.0dp</item>
+        <item name="android:autoSizeMinTextSize">12.0dp</item>
+        <item name="android:autoSizeMaxTextSize">18.0dp</item>
+    </style>
+    <style name="KioskDialogErrorTitle" parent="@style/KioskDialogMessage">
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="KioskDialogMessage">
+        <item name="android:textSize">14.0dp</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:lineHeight">21.0dp</item>
+    </style>
+    <style name="KioskDialogTitle">
+        <item name="android:textSize">17.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/main_font_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14.0dp</item>
+        <item name="android:layout_marginBottom">12.0dp</item>
+        <item name="android:layout_marginStart">4.0dp</item>
+        <item name="android:layout_marginEnd">4.0dp</item>
+    </style>
+    <style name="LockscreenButton">
+        <item name="android:textSize">26.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="LockscreenDot">
+        <item name="android:layout_width">16.0dp</item>
+        <item name="android:layout_height">16.0dp</item>
+        <item name="android:src">@drawable/type1_lock_key</item>
+    </style>
+    <style name="MarketButton">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/workspace_all_apps_and_delete_zone_text_color</item>
+        <item name="android:paddingLeft">5.0dp</item>
+        <item name="android:paddingRight">5.0dp</item>
+        <item name="android:shadowColor">@color/workspace_all_apps_and_delete_zone_text_shadow_color</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">0.0</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="NoDisplay" parent="@android:style/Theme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="SingleKioskGuide">
+        <item name="android:textSize">20.0dp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#ffffffff</item>
+    </style>
+    <style name="SplashActivity" parent="@android:style/Theme.Holo">
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+    <style name="SplashActivity.Translucent" parent="@style/SplashActivity">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+    </style>
+    <style name="TabIndicator">
+        <item name="android:textSize">12.0dp</item>
+        <item name="android:textColor">@color/tab_widgets_text_color</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/tab_widget_indicator_selector</item>
+        <item name="android:paddingLeft">10.0dp</item>
+        <item name="android:paddingRight">10.0dp</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:minWidth">100.0dp</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">4.0dp</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+    <style name="TabIndicator.AppsCustomize" parent="@style/TabIndicator" />
+    <style name="TextAppearance.Compat.Notification" parent="@android:style/TextAppearance.Material.Notification" />
+    <style name="TextAppearance.Compat.Notification.Info" parent="@android:style/TextAppearance.Material.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Info.Media" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Line2" parent="@style/TextAppearance.Compat.Notification.Info" />
+    <style name="TextAppearance.Compat.Notification.Line2.Media" parent="@style/TextAppearance.Compat.Notification.Info.Media" />
+    <style name="TextAppearance.Compat.Notification.Media" parent="@style/TextAppearance.Compat.Notification" />
+    <style name="TextAppearance.Compat.Notification.Time" parent="@android:style/TextAppearance.Material.Notification.Time" />
+    <style name="TextAppearance.Compat.Notification.Time.Media" parent="@style/TextAppearance.Compat.Notification.Time" />
+    <style name="TextAppearance.Compat.Notification.Title" parent="@android:style/TextAppearance.Material.Notification.Title" />
+    <style name="TextAppearance.Compat.Notification.Title.Media" parent="@style/TextAppearance.Compat.Notification.Title" />
+    <style name="ThemeSetting" />
+    <style name="ThemeSetting.Button" parent="@style/ThemeSetting">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/btn_popup</item>
+        <item name="android:minWidth">0.0dp</item>
+        <item name="android:minHeight">0.0dp</item>
+    </style>
+    <style name="ThemeSetting.ImageButton" parent="@style/ThemeSetting">
+        <item name="android:textSize">13.0dp</item>
+        <item name="android:textColor">@color/btn_theme_text_color</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/theme_button_bg</item>
+        <item name="android:paddingLeft">12.0dp</item>
+        <item name="android:paddingRight">6.0dp</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:minWidth">0.0dp</item>
+        <item name="android:minHeight">0.0dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:drawablePadding">3.0dp</item>
+    </style>
+    <style name="ThemeSetting.Title" parent="@style/ThemeSetting">
+        <item name="android:textSize">15.0dp</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionContainer" parent="">
+        <item name="android:background">@drawable/notification_action_background</item>
+    </style>
+    <style name="Widget.Compat.NotificationActionText" parent="">
+        <item name="android:textAppearance">?android:textAppearanceButton</item>
+        <item name="android:textSize">@dimen/notification_action_text_size</item>
+        <item name="android:textColor">@color/secondary_text_default_material_light</item>
+    </style>
+    <style name="WorkspaceIcon">
+        <item name="android:textSize">@dimen/workspace_icon_textsize</item>
+        <item name="android:textColor">#ffffffff</item>
+        <item name="android:ellipsize">end</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:shadowColor">#b0000000</item>
+        <item name="android:shadowRadius">2.0</item>
+    </style>
+    <style name="WorkspaceIcon.Landscape" parent="@style/WorkspaceIcon">
+        <item name="android:paddingLeft">4.0dp</item>
+        <item name="android:paddingTop">@dimen/app_icon_padding_top</item>
+        <item name="android:paddingRight">4.0dp</item>
+        <item name="android:paddingBottom">4.0dp</item>
+        <item name="android:drawablePadding">2.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Landscape.AppsCustomize" parent="@style/WorkspaceIcon.Landscape">
+        <item name="android:background">@null</item>
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:paddingBottom">0.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Landscape.AppsCustomize.FolderIcon" parent="@style/WorkspaceIcon.Landscape.AppsCustomize">
+        <item name="android:layout_marginTop">2.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Landscape.AppsCustomize.FolderText" parent="@style/WorkspaceIcon.Landscape.AppsCustomize">
+        <item name="android:drawablePadding">0.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Landscape.Folder" parent="@style/WorkspaceIcon.Landscape">
+        <item name="android:paddingTop">0.0dp</item>
+        <item name="android:layout_marginTop">-2.0dp</item>
+        <item name="android:drawablePadding">0.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait" parent="@style/WorkspaceIcon">
+        <item name="android:paddingLeft">4.0dp</item>
+        <item name="android:paddingTop">@dimen/app_icon_padding_top</item>
+        <item name="android:paddingRight">4.0dp</item>
+        <item name="android:paddingBottom">4.0dp</item>
+        <item name="android:drawablePadding">8.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.AppsCustomize" parent="@style/WorkspaceIcon.Portrait">
+        <item name="android:background">@null</item>
+        <item name="android:paddingLeft">0.0dp</item>
+        <item name="android:paddingTop">0.0dp</item>
+        <item name="android:paddingRight">0.0dp</item>
+        <item name="android:paddingBottom">0.0dp</item>
+        <item name="android:maxLines">2</item>
+        <item name="android:singleLine">false</item>
+        <item name="android:drawablePadding">2.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.AppsCustomize.FolderIcon" parent="@style/WorkspaceIcon.Portrait.AppsCustomize">
+        <item name="android:layout_marginTop">2.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.AppsCustomize.FolderText" parent="@style/WorkspaceIcon.Portrait.AppsCustomize">
+        <item name="android:drawablePadding">0.0dp</item>
+    </style>
+    <style name="WorkspaceIcon.Portrait.Folder" parent="@style/WorkspaceIcon.Portrait">
+        <item name="android:paddingTop">2.0dp</item>
+        <item name="android:drawablePadding">0.0dp</item>
+    </style>
+</resources>

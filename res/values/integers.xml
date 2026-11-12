@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="cancel_button_image_alpha">127</integer>
+    <integer name="config_crosshairsFadeInTime">600</integer>
+    <integer name="config_dragOutlineFadeTime">900</integer>
+    <integer name="config_dropAnimMaxDist">800</integer>
+    <integer name="config_dropAnimMaxDuration">500</integer>
+    <integer name="config_dropAnimMinDuration">100</integer>
+    <integer name="config_folderAnimDuration">120</integer>
+    <integer name="config_scrollbar_fade_duration">300</integer>
+    <integer name="config_workspaceDefaultCellCount">4</integer>
+    <integer name="folder_max_count_x">4</integer>
+    <integer name="folder_max_count_y">4</integer>
+    <integer name="folder_max_num_items">16</integer>
+    <integer name="status_bar_notification_info_maxnum">999</integer>
+</resources>
