@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HomeWidget xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <CommonSetting
+	    color="#ffA9C456"
+	    type="1"
+        />
+    <Text color="#FF43C437" style="1" url="http://www.naver.com" >Naver</Text>
+</HomeWidget>

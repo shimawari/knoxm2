@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<favorite_resolvers
+  xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <resolver launcher:tagName="music">
+        <package launcher:className="com.android.music.activitymanagement.TopLevelActivity" launcher:packageName="com.android.music" />
+        <package launcher:className="com.android.music.activitymanagement.TopLevelActivity" launcher:packageName="com.google.android.music" />
+        <package launcher:className="com.sec.android.app.music.list.activity.MpMainTabActivity" launcher:packageName="com.sec.android.app.music" />
+        <package launcher:className="com.sec.android.app.music.MusicBrowserTabActivity" launcher:packageName="com.sec.android.app.music" />
+        <package launcher:className="com.sec.android.app.music.MusicActionTabActivity" launcher:packageName="com.sec.android.app.music" />
+        <package launcher:className="com.pantech.app.music.library.MusicLibraryTabHost" launcher:packageName="com.pantech.app.music" />
+        <package launcher:className="com.lge.music.MusicBrowserActivity" launcher:packageName="com.lge.music" />
+    </resolver>
+    <resolver launcher:tagName="camera">
+        <package launcher:className="com.android.camera.Camera" launcher:packageName="com.android.camera" />
+        <package launcher:className="com.sec.android.app.camera.Camera" launcher:packageName="com.sec.android.app.camera" />
+        <package launcher:className="com.pantech.app.vegacamera.Camera" launcher:packageName="com.pantech.app.vegacamera" />
+        <package launcher:className="com.pantech.app.skycamera.Camera" launcher:packageName="com.pantech.app.skycamera" />
+        <package launcher:className="com.android.camera.CameraLauncher" launcher:packageName="com.android.camera" />
+        <package launcher:className="com.lge.camera.CamLoading" launcher:packageName="com.lge.camera" />
+        <package launcher:className="com.lge.camera.CameraApp" launcher:packageName="com.lge.camera" />
+        <package launcher:className="com.android.camera.CameraLauncher" launcher:packageName="com.google.android.gallery3d" />
+    </resolver>
+    <resolver launcher:tagName="gallery">
+        <package launcher:className="com.android.gallery3d.app.GalleryActivity" launcher:packageName="com.android.gallery3d" />
+        <package launcher:className="com.android.gallery3d.app.Gallery" launcher:packageName="com.android.gallery3d" />
+        <package launcher:className="com.android.gallery3d.app.Gallery" launcher:packageName="com.google.android.gallery3d" />
+        <package launcher:className="com.cooliris.media.Gallery" launcher:packageName="com.cooliris.media" />
+        <package launcher:className="com.sec.android.gallery3d.app.Gallery" launcher:packageName="com.sec.android.gallery3d" />
+    </resolver>
+    <resolver launcher:tagName="clock">
+        <package launcher:className="com.pantech.app.clock.ClockLauncher" launcher:packageName="com.android.deskclock" />
+        <package launcher:className="com.android.deskclock.DeskClock" launcher:packageName="com.android.deskclock" />
+        <package launcher:className="com.sec.android.app.clockpackage.ClockPackage" launcher:packageName="com.sec.android.app.clockpackage" />
+        <package launcher:className="com.android.deskclock.AlarmClock" launcher:packageName="com.android.deskclock" />
+        <package launcher:className="com.lge.clock.DefaultAlarmClockActivity" launcher:packageName="com.lge.clock" />
+        <package launcher:className="com.lge.clock.AlarmClockActivity" launcher:packageName="com.lge.clock" />
+        <package launcher:className="com.android.deskclock.DeskClock" launcher:packageName="com.google.android.deskclock" />
+    </resolver>
+    <resolver launcher:tagName="video">
+        <package launcher:className="com.samsung.everglades.video.VideoMain" launcher:packageName="com.samsung.everglades.video" />
+        <package launcher:className="com.sec.android.app.videoplayer.activity.MainTab" launcher:packageName="com.sec.android.app.videoplayer" />
+        <package launcher:className="com.pantech.app.video.ui.playlist.VideoListActivity" launcher:packageName="com.pantech.app.skymovie" />
+        <package launcher:className="com.pantech.app.video.ui.playlist.VideoListActivity" launcher:packageName="com.pantech.app.movie" />
+        <package launcher:className="com.pantech.app.video.ui.playlist.VideoListActivity" launcher:packageName="com.pantech.app.video" />
+        <package launcher:className="com.lge.videoplayer.VideoPlayerList" launcher:packageName="com.lge.videoplayer" />
+        <package launcher:className="com.lge.videoplayer.list.VideoPlayerActivity" launcher:packageName="com.lge.videoplayer" />
+        <package launcher:className="com.android.videoeditor.ProjectsActivity" launcher:packageName="com.google.android.videoeditor" />
+    </resolver>
+    <resolver launcher:tagName="phone">
+        <package launcher:className="com.android.dialer.activities.PCUDialtactsActivity" launcher:packageName="com.android.dialer" />
+        <package launcher:className="com.android.contacts.activities.PCUDialtactsActivity" launcher:packageName="com.android.contacts" />
+        <package launcher:className="com.android.contacts.PhoneContactsActivity" launcher:packageName="com.android.contacts" />
+        <package launcher:className="com.sec.android.app.dialertop.TwelveKeyDialer" launcher:packageName="com.sec.android.app.dialertop" />
+        <package launcher:className="com.sec.android.app.dialertab.DialerTabActivity" launcher:packageName="com.sec.android.app.dialertab" />
+        <package launcher:className="com.android.dialer.DialtactsActivity" launcher:packageName="com.android.contacts" />
+        <package launcher:className="com.android.dialer.DialtactsActivity" launcher:packageName="com.android.dialer" />
+        <package launcher:className="com.android.contacts.activities.DialtactsActivity" launcher:packageName="com.android.contacts" />
+        <query launcher:queryBlackList="com.android.contacts.activities.NonPhoneActivity" launcher:queryData="tel:" launcher:queryIntent="android.intent.action.DIAL" />
+    </resolver>
+    <resolver launcher:tagName="contacts">
+        <package launcher:className="com.android.contacts.activities.PeopleActivity" launcher:packageName="com.android.contacts" />
+        <package launcher:className="com.android.contacts.activities.DialtactsContactsEntryActivity" launcher:packageName="com.android.contacts" />
+        <package launcher:className="com.sec.android.app.contacts.PhoneBookTopMenuActivity" launcher:packageName="com.sec.android.app.contacts" />
+        <query launcher:queryData="content://contacts/people" launcher:queryIntent="android.intent.action.VIEW" />
+    </resolver>
+    <resolver launcher:tagName="browser">
+        <package launcher:className="com.sec.android.app.sbrowser.SBrowserMainActivity" launcher:packageName="com.sec.android.app.sbrowser" />
+        <package launcher:className="com.android.browser.BrowserActivity" launcher:packageName="com.android.browser" />
+        <package launcher:className="com.google.android.apps.chrome.Main" launcher:packageName="com.android.chrome" />
+        <query launcher:queryBlackList="com.sec.webbrowserminiapp" launcher:queryData="http:" launcher:queryIntent="android.intent.action.VIEW" />
+    </resolver>
+    <resolver launcher:tagName="messaging">
+        <package launcher:className="com.pantech.app.mms.skt.ui.XnewmessageBox" launcher:packageName="com.pantech.app.mms.skt" />
+        <package launcher:className="com.android.mms.ui.ConversationComposer" launcher:packageName="com.android.mms" />
+        <package launcher:className="com.google.android.apps.messaging.ui.ConversationListActivity" launcher:packageName="com.google.android.apps.messaging" />
+        <package launcher:className="com.sec.mms.Mms" launcher:packageName="com.sec.mms" />
+        <package launcher:className="com.sec.android.mms.kor.ui.list.ListFragmentActivity" launcher:packageName="com.sec.android.mms.kor" />
+        <package launcher:className="com.pantech.app.mms.ui.EntryActivity" launcher:packageName="com.pantech.app.mms" />
+        <package launcher:className="com.lge.message.ui.ConversationList" launcher:packageName="com.lge.message" />
+        <query launcher:queryIntent="android.intent.action.MAIN" launcher:queryType="vnd.android-dir/mms-sms" />
+        <package launcher:className="com.google.android.talk.SigningInActivity" launcher:packageName="com.google.android.talk" />
+    </resolver>
+    <resolver launcher:tagName="settings">
+        <package launcher:className="com.android.settings.SettingsTabActivity" launcher:packageName="com.android.settings" />
+        <package launcher:className="com.android.settings.Settings" launcher:packageName="com.android.settings" />
+        <package launcher:className="com.pantech.app.skysettings.SKYSettings" launcher:packageName="com.pantech.app.skysettings" />
+    </resolver>
+    <resolver launcher:tagName="tmap">
+        <package launcher:className="com.skt.tmap.activity.TmapIntroActivity" launcher:packageName="com.skt.skaf.l001mtm091" />
+        <package launcher:className="com.skt.skaf.l001mtm091.IntroActivity" launcher:packageName="com.skt.skaf.l001mtm091" />
+        <package launcher:className="com.skt.tmap.activity.TmapIntroActivity" launcher:packageName="com.skt.skaf.l001mtm092" />
+    </resolver>
+</favorite_resolvers>

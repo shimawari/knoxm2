@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prompt.kiosk.slauncher.DragLayer android:id="@id/drag_layer" android:layout_width="match_parent" android:layout_height="match_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="top" android:id="@id/kiosk_logo_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/kiosk_logo_height" android:scaleType="fitCenter" />
+    <com.prompt.kiosk.slauncher.Workspace android:id="@id/workspace" android:paddingRight="@dimen/button_bar_height" android:paddingBottom="@dimen/workspace_padding_bottom" android:layout_width="match_parent" android:layout_height="match_parent" launcher:cellCountX="@integer/config_workspaceDefaultCellCount" launcher:cellCountY="@integer/config_workspaceDefaultCellCount" launcher:defaultScreen="2" launcher:pageSpacing="@dimen/workspace_page_spacing" launcher:scrollIndicatorPaddingLeft="@dimen/qsb_bar_height" launcher:scrollIndicatorPaddingRight="@dimen/button_bar_height" />
+    <include android:layout_gravity="bottom" android:id="@id/paged_view_indicator" android:layout_width="match_parent" android:layout_height="@dimen/workspace_position_marker_height" layout="@layout/position_marker" />
+    <RelativeLayout android:gravity="center" android:layout_gravity="bottom" android:id="@id/login_progressbar" android:paddingBottom="70.0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingStart="25.0dp" android:paddingEnd="25.0dp">
+        <ProgressBar android:id="@id/app_down_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminate="true" android:layout_centerHorizontal="true" />
+        <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/single_kiosk_guide" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dp" android:maxLines="3" android:layout_below="@id/app_down_progress" android:layout_centerHorizontal="true" style="@style/SingleKioskGuide" />
+    </RelativeLayout>
+</com.prompt.kiosk.slauncher.DragLayer>

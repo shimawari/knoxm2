@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<styles>
+    <style colorTo="text|preview_layer1">type1</style>
+    <style colorTo="bg|preview">type2</style>
+    <style>type3</style>
+    <style colorTo="text|preview_layer1">type4</style>
+</styles>

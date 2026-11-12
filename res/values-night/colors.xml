@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="btn_pressed_background">#ff3a3a3d</color>
+    <color name="content_font_color">#ffa3a3a7</color>
+    <color name="dialog_background_color">#ff252528</color>
+    <color name="dialog_divider_color">#ff4d4d52</color>
+    <color name="main_font_color">#fffcfcff</color>
+    <color name="primary_high_color">#ff578fff</color>
+    <color name="top_bar_background_color">#ff010102</color>
+</resources>

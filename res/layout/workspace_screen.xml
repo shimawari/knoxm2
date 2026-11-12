@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.prompt.kiosk.slauncher.CellLayout android:paddingLeft="@dimen/workspace_left_padding" android:paddingTop="@dimen/workspace_top_padding" android:paddingRight="@dimen/workspace_right_padding" android:paddingBottom="@dimen/workspace_bottom_padding" android:hapticFeedbackEnabled="false" launcher:allowFreeGap="true" launcher:cellHeight="@dimen/workspace_cell_height" launcher:cellWidth="@dimen/workspace_cell_width" launcher:heightGap="@dimen/workspace_height_gap" launcher:maxGap="@dimen/workspace_max_gap" launcher:widthGap="@dimen/workspace_width_gap" style="@style/WorkspaceScreen"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:launcher="http://schemas.android.com/apk/res-auto" />

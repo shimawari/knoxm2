@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HomeWidget xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <CommonSetting
+	    color="#ff1AFF49"
+	    type="2" />
+    
+    <Text color="#FF1AFF49" style="2" url="http://">URL without path</Text>
+</HomeWidget>

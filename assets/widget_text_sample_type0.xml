@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HomeWidget xmlns:launcher="http://schemas.android.com/apk/res-auto">
+    <CommonSetting
+	    color="#ffffa943"
+	    type="0" />
+
+    <!--    Text style values
+        0: normal
+        1: bold
+        2: italic
+        3: bold, italic
+     -->
+    <Text color="#FFFFA943" style="0" >Sample Text type 0</Text>
+</HomeWidget>
